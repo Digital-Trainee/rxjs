@@ -20,11 +20,16 @@ export class TimerComponent {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
 
-    this.timers.subscribe((Res:any)=>{
+    this.timerSubscriptions = this.timers.subscribe((Res:any)=>{
       console.log(Res);
       let pages  = <any>document.createElement('p');
       pages.innerHTML = Res;
       document.getElementById('page')?.append(pages);
+
+      if(Res >= 5 )
+      {
+        this.timerSubscriptions?.unsubscribe();
+      }
     })
   }
 
