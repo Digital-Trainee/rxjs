@@ -10,6 +10,7 @@ import { of, Subscription } from 'rxjs';
 })
 export class OfComponent {
   ofsubscription:Subscription | undefined;
+  objectdata:any;
 
   constructor()
   {
@@ -25,6 +26,13 @@ export class OfComponent {
       let ofc = document.createElement('li');
       ofc.innerHTML = res;
       document.getElementById('hellojs')?.appendChild(ofc)
+    })
+
+
+    // let object example because object store key and value
+    of({a:'angular',b:'bsdk',c:'chutiya'}).subscribe((res:any)=>{
+      console.log(res);
+      this.objectdata = res;
     })
   }
 
