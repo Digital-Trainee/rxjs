@@ -6,6 +6,7 @@ import { OfComponent } from './of/of.component';
 import { FromComponent } from './from/from.component';
 import { ToArrayComponent } from './to-array/to-array.component';
 import { ObservableComponent } from './observable/observable.component';
+import { MapComponent } from './map/map.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -13,5 +14,8 @@ export const routes: Routes = [
   {path : 'of',component:OfComponent},
   {path : 'from',component:FromComponent},
   {path : 'to-array',component:ToArrayComponent},
-  {path : 'custom-observable',component:ObservableComponent}
+  {path : 'custom-observable',component:ObservableComponent},
+  // Transformation Operators
+  {path : 'map',component:MapComponent}
+
 ];
