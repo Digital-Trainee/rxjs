@@ -4,10 +4,12 @@ import { Routes } from '@angular/router';
 import { TimerComponent } from './timer/timer.component';
 import { OfComponent } from './of/of.component';
 import { FromComponent } from './from/from.component';
+import { ToArrayComponent } from './to-array/to-array.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
   {path:'timer',component:TimerComponent},
   {path : 'of',component:OfComponent},
-  {path : 'from',component:FromComponent}
+  {path : 'from',component:FromComponent},
+  {path : 'to-array',component:ToArrayComponent}
 ];
