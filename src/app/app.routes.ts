@@ -7,6 +7,7 @@ import { FromComponent } from './from/from.component';
 import { ToArrayComponent } from './to-array/to-array.component';
 import { ObservableComponent } from './observable/observable.component';
 import { MapComponent } from './map/map.component';
+import { PlucjComponent } from './pluck/pluck.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -16,6 +17,7 @@ export const routes: Routes = [
   {path : 'to-array',component:ToArrayComponent},
   {path : 'custom-observable',component:ObservableComponent},
   // Transformation Operators
-  {path : 'map',component:MapComponent}
+  {path : 'map',component:MapComponent},
+  {path : 'pluck',component:PlucjComponent}
 
 ];

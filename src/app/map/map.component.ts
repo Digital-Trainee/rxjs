@@ -59,7 +59,7 @@ export class MapComponent implements OnInit {
   ];
 
   let memFrom = from(members)
-  memFrom.pipe( map(res => [ res.name , res.age ] )).subscribe((res:any)=>{
+  memFrom.pipe( map(res => [ res.name , (res.age >= 20) ? '20' : res.age  ] ) ).subscribe((res:any)=>{
       console.log(res);
 
       let mem = document.createElement('li')
