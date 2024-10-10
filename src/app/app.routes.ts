@@ -8,6 +8,7 @@ import { ToArrayComponent } from './to-array/to-array.component';
 import { ObservableComponent } from './observable/observable.component';
 import { MapComponent } from './map/map.component';
 import { PlucjComponent } from './pluck/pluck.component';
+import { FilterComponent } from './filter/filter.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -18,6 +19,7 @@ export const routes: Routes = [
   {path : 'custom-observable',component:ObservableComponent},
   // Transformation Operators
   {path : 'map',component:MapComponent},
-  {path : 'pluck',component:PlucjComponent}
+  {path : 'pluck',component:PlucjComponent},
+  {path : 'filter',component:FilterComponent}
 
 ];
