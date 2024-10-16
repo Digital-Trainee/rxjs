@@ -28,7 +28,6 @@ export class TakeLastUntilComponent implements OnInit {
 
     let interv = interval(1000);
 
-    let hell = true;
     interv.pipe(takeUntil(timerr)).subscribe((res:any)=>{
       console.log(res);
     })
@@ -39,6 +38,12 @@ export class TakeLastUntilComponent implements OnInit {
     let interv = interval(1000);
     interv.pipe(takeUntil(this.button)).subscribe((res:any)=>{
       console.log(res)
+    })
+
+    let butn = fromEvent(document,'click')
+
+    interv.pipe(takeUntil(butn)).subscribe((res:any)=>{
+      console.log(res);
     })
   }
 
