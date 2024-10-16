@@ -10,6 +10,7 @@ import { MapComponent } from './map/map.component';
 import { PlucjComponent } from './pluck/pluck.component';
 import { FilterComponent } from './filter/filter.component';
 import { TapdoComponent } from './tapdo/tapdo.component';
+import { TakeLastUntilComponent } from './take-last-until/take-last-until.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -22,7 +23,6 @@ export const routes: Routes = [
   {path : 'map',component:MapComponent},
   {path : 'pluck',component:PlucjComponent},
   {path : 'filter',component:FilterComponent},
-  {path : 'tapdo',component:TapdoComponent}
-
-
+  {path : 'tapdo',component:TapdoComponent},
+  {path : 'take',component:TakeLastUntilComponent}
 ];
