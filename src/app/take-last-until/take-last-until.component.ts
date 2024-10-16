@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { from, take, takeLast } from 'rxjs';
+import { from, fromEvent, interval, of, Subject, take, takeLast, takeUntil, timer } from 'rxjs';
 
 @Component({
   selector: 'app-take-last-until',
@@ -22,6 +22,28 @@ export class TakeLastUntilComponent implements OnInit {
     from(this.user).pipe(takeLast(5)).subscribe((res:any)=>{
       console.log( 'takelast:- '+res);
     })
+
+
+    let timerr = timer(5000);
+
+    let interv = interval(1000);
+
+    let hell = true;
+    interv.pipe(takeUntil(timerr)).subscribe((res:any)=>{
+      console.log(res);
+    })
   }
 
+  button = new Subject<void>() ;
+  ngAfterViewInit(): void {
+    let interv = interval(1000);
+    interv.pipe(takeUntil(this.button)).subscribe((res:any)=>{
+      console.log(res)
+    })
+  }
+
+  stopbtn()
+  {
+    this.button.next();
+  }
 }
