@@ -9,6 +9,7 @@ import { ObservableComponent } from './observable/observable.component';
 import { MapComponent } from './map/map.component';
 import { PlucjComponent } from './pluck/pluck.component';
 import { FilterComponent } from './filter/filter.component';
+import { TapdoComponent } from './tapdo/tapdo.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -20,6 +21,8 @@ export const routes: Routes = [
   // Transformation Operators
   {path : 'map',component:MapComponent},
   {path : 'pluck',component:PlucjComponent},
-  {path : 'filter',component:FilterComponent}
+  {path : 'filter',component:FilterComponent},
+  {path : 'tapdo',component:TapdoComponent}
+
 
 ];
