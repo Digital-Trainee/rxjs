@@ -1,3 +1,4 @@
+import { RetryWhenScanDelayComponent } from './retry-when-scan-delay/retry-when-scan-delay.component';
 import { Component } from '@angular/core';
 import { IntervalComponent } from './interval/interval.component';
 import { Routes } from '@angular/router';
@@ -24,5 +25,6 @@ export const routes: Routes = [
   {path : 'pluck',component:PlucjComponent},
   {path : 'filter',component:FilterComponent},
   {path : 'tapdo',component:TapdoComponent},
-  {path : 'take',component:TakeLastUntilComponent}
+  {path : 'take',component:TakeLastUntilComponent},
+  {path : 'retry',component:RetryWhenScanDelayComponent}
 ];
