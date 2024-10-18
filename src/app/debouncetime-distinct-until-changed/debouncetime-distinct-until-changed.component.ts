@@ -24,6 +24,7 @@ export class DebouncetimeDistinctUntilChangedComponent implements AfterViewInit 
       // // this example of Distinct Until Changed
       Sedata.pipe(map(res => res.target.value),debounceTime(1000),distinctUntilChanged()).subscribe((res:any)=>{
         console.log('This Is Distinct Until Changed => '+ res);
+
       })
   }
 
