@@ -12,6 +12,7 @@ import { PlucjComponent } from './pluck/pluck.component';
 import { FilterComponent } from './filter/filter.component';
 import { TapdoComponent } from './tapdo/tapdo.component';
 import { TakeLastUntilComponent } from './take-last-until/take-last-until.component';
+import { DebouncetimeDistinctUntilChangedComponent } from './debouncetime-distinct-until-changed/debouncetime-distinct-until-changed.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -26,5 +27,6 @@ export const routes: Routes = [
   {path : 'filter',component:FilterComponent},
   {path : 'tapdo',component:TapdoComponent},
   {path : 'take',component:TakeLastUntilComponent},
-  {path : 'retry',component:RetryWhenScanDelayComponent}
+  {path : 'retry',component:RetryWhenScanDelayComponent},
+  {path : 'debounceTime',component:DebouncetimeDistinctUntilChangedComponent}
 ];
