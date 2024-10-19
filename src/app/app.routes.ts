@@ -1,3 +1,4 @@
+import { SubjectSubjectBehaviourComponent } from './subject-subject-behaviour/subject-subject-behaviour.component';
 import { RetryWhenScanDelayComponent } from './retry-when-scan-delay/retry-when-scan-delay.component';
 import { Component } from '@angular/core';
 import { IntervalComponent } from './interval/interval.component';
@@ -28,5 +29,6 @@ export const routes: Routes = [
   {path : 'tapdo',component:TapdoComponent},
   {path : 'take',component:TakeLastUntilComponent},
   {path : 'retry',component:RetryWhenScanDelayComponent},
-  {path : 'debounceTime',component:DebouncetimeDistinctUntilChangedComponent}
+  {path : 'debounceTime',component:DebouncetimeDistinctUntilChangedComponent},
+  {path : 'subject',Component:SubjectSubjectBehaviourComponent}
 ];
