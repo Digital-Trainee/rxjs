@@ -30,5 +30,5 @@ export const routes: Routes = [
   {path : 'take',component:TakeLastUntilComponent},
   {path : 'retry',component:RetryWhenScanDelayComponent},
   {path : 'debounceTime',component:DebouncetimeDistinctUntilChangedComponent},
-  {path : 'subject',Component:SubjectSubjectBehaviourComponent}
+  {path : 'subject',component:SubjectSubjectBehaviourComponent}
 ];
