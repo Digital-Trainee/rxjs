@@ -15,5 +15,13 @@ export class Sub1Component {
     this.apiu.suhas.subscribe((res:any)=>{
       this.nameA = res
     })
+    this.apiu.nameS.subscribe((Res:any)=>{
+      this.nameA = Res;
+    })
+  }
+
+  updatenameS(name:any)
+  {
+    this.apiu.nameS.next(name);
   }
 }

@@ -20,13 +20,20 @@ export class SubjectSubjectBehaviourComponent implements OnInit {
     })
 
 
+
+
   }
 suhasname:any = '';
 
+  updatenameS(nameSv:any)
+  {
+    this.api.nameS.next(nameSv);
+  }
   ngAfterViewInit(): void {
    }
   changen(name:any)
   {
+    this.api.suhas.next(name);
     if(this.suhasname == 'show')
       {
         this.api.hidesuhas();
@@ -34,4 +41,8 @@ suhasname:any = '';
         this.api.showsuhas();
       }
   }
+
+
+
+
 }

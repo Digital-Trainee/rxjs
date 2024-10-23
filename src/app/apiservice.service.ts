@@ -8,6 +8,7 @@ import { BehaviorSubject, Observable, Subject, tap } from 'rxjs';
 export class ApiserviceService {
   constructor(private http:HttpClient) {}
   suhas = new Subject<string>()
+  obsersuhas = this.suhas.asObservable();
   show = new Subject<any>()
 
   nameS = new BehaviorSubject<any>('Borkar')
