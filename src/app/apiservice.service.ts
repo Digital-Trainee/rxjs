@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, Subject, tap } from 'rxjs';
+import { BehaviorSubject, Observable, ReplaySubject, Subject, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -40,5 +40,8 @@ export class ApiserviceService {
     );
   }
 
+
+  addNewData =  new ReplaySubject<any>(4)
+  obseraddnewdata = this.addNewData.asObservable();
 
 }

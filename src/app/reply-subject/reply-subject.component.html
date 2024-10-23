@@ -1,0 +1,49 @@
+<div class="container">
+  <p>reply-subject works!</p>
+  <input type="text" style="margin-right: 10px;" #newData>
+  <button class="btn btn-info" style="margin-left: 10px;" (click)="Adddata(newData)">Add Data</button>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Main Data</h3>
+      <table>
+        <tr>
+          <th>SN</th>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of data;let i = index ">
+          <td>{{ i+1 }}</td>
+          <td>{{item}}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <h3>Sub1 Data</h3>
+      <button class="bg-primary" (click)="subscibeSub1()">Subscribe</button>
+      <table>
+        <tr>
+          <th>SN</th>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of sub1;let i = index;">
+          <td>{{ i+1 }}</td>
+          <td>{{ item }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <h3>Sub2 Data</h3>
+      <table>
+        <tr>
+          <th>SN</th>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of sub2;let i = index;">
+          <td>{{ i+1 }}</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
