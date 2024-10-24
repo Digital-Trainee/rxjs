@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, ReplaySubject, Subject, tap } from 'rxjs';
+import { AsyncSubject, BehaviorSubject, Observable, ReplaySubject, Subject, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +14,9 @@ export class ApiserviceService {
   nameS = new BehaviorSubject<any>('Borkar')
   suhasb= this.nameS.asObservable();
 
+  asyncSu = new AsyncSubject(); // async subject has stored last value on observbel stream // // when async can done his completion after that he not emit new value
+  asyncSuObser = this.asyncSu.asObservable();
+  
   showsuhas()
   {
     this.nameS.next('show');
