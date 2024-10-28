@@ -16,14 +16,14 @@ export class AsyncSubjectComponent implements OnInit  {
   ngOnInit(): void {
     this.async.asyncSu.subscribe((res:any)=>{
       this.lastValue = res;
-    })  
+    })
   }
 
   updateAsyncValue(value:any){
     console.log(value);
     this.async.asyncSu.next(value);
   }
-  
+
 
   subscibeLastValue()
   {
