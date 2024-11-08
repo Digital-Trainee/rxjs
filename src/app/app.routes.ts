@@ -17,6 +17,7 @@ import { DebouncetimeDistinctUntilChangedComponent } from './debouncetime-distin
 import { ReplySubjectComponent } from './reply-subject/reply-subject.component';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ConcatMergeComponent } from './concat-merge/concat-merge.component';
+import { MapMergeComponent } from './map-merge/map-merge.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -36,7 +37,8 @@ export const routes: Routes = [
   {path : 'subject',component:SubjectSubjectBehaviourComponent},
   {path : 'reply', component:ReplySubjectComponent },
   {path : 'asyncs', component:AsyncSubjectComponent},
-  {path : 'concat-merge',component:ConcatMergeComponent }
+  {path : 'concat-merge',component:ConcatMergeComponent},
+  {path : 'map-merge',component:MapMergeComponent}
 
 ];
 
