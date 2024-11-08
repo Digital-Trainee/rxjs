@@ -16,6 +16,7 @@ import { TakeLastUntilComponent } from './take-last-until/take-last-until.compon
 import { DebouncetimeDistinctUntilChangedComponent } from './debouncetime-distinct-until-changed/debouncetime-distinct-until-changed.component';
 import { ReplySubjectComponent } from './reply-subject/reply-subject.component';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { ConcatMergeComponent } from './concat-merge/concat-merge.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -34,7 +35,8 @@ export const routes: Routes = [
   {path : 'debounceTime',component:DebouncetimeDistinctUntilChangedComponent},
   {path : 'subject',component:SubjectSubjectBehaviourComponent},
   {path : 'reply', component:ReplySubjectComponent },
-  {path : 'asyncs', component:AsyncSubjectComponent}
+  {path : 'asyncs', component:AsyncSubjectComponent},
+  {path : 'concat-merge',component:ConcatMergeComponent }
 
 ];
 
