@@ -18,6 +18,7 @@ import { ReplySubjectComponent } from './reply-subject/reply-subject.component';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ConcatMergeComponent } from './concat-merge/concat-merge.component';
 import { MapMergeComponent } from './map-merge/map-merge.component';
+import { ConcatMapComponent } from './concat-map/concat-map.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -38,7 +39,8 @@ export const routes: Routes = [
   {path : 'reply', component:ReplySubjectComponent },
   {path : 'asyncs', component:AsyncSubjectComponent},
   {path : 'concat-merge',component:ConcatMergeComponent},
-  {path : 'map-merge',component:MapMergeComponent}
+  {path : 'map-merge',component:MapMergeComponent},
+  {path : 'map-concat',component:ConcatMapComponent}
 
 ];
 
