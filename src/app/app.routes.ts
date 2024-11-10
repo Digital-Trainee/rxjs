@@ -20,6 +20,7 @@ import { ConcatMergeComponent } from './concat-merge/concat-merge.component';
 import { MapMergeComponent } from './map-merge/map-merge.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { SwitchmapComponent } from './switchmap/switchmap.component';
+import { SwitchMapExampleComponent } from './switch-map-example/switch-map-example.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -43,6 +44,8 @@ export const routes: Routes = [
   {path : 'concat-merge',component:ConcatMergeComponent},
   {path : 'map-merge',component:MapMergeComponent},
   {path : 'map-concat',component:ConcatMapComponent},
-  {path : 'map-switch',component:SwitchmapComponent}
+  {path : 'map-switch',component:SwitchmapComponent},
+  {path : 'map-switch-example',component:SwitchMapExampleComponent},
+
 ];
 
