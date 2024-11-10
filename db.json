@@ -1,4 +1,16 @@
 {
+  "product" : [
+    {"id":1,"type":"mobile","name":"Mobile1"},
+    {"id":1,"type":"pc","name":"pc1"},
+    {"id":1,"type":"mobile","name":"Mobile2"},
+    {"id":1,"type":"pc","name":"pc2"},
+    {"id":1,"type":"mobile","name":"Mobile3"},
+    {"id":1,"type":"pc","name":"pc3"},
+    {"id":1,"type":"mobile","name":"Mobile4"},
+    {"id":1,"type":"pc","name":"pc4"},
+    {"id":1,"type":"mobile","name":"Mobile5"},
+    {"id":1,"type":"pc","name":"pc5"}
+  ],
   "user": [
     {
       "id": 1

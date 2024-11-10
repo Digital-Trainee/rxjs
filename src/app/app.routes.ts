@@ -22,6 +22,7 @@ import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { SwitchmapComponent } from './switchmap/switchmap.component';
 import { SwitchMapExampleComponent } from './switch-map-example/switch-map-example.component';
 import { ExhaustMapComponent } from './exhaust-map/exhaust-map.component';
+import { ShareReplyComponent } from './share-reply/share-reply.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -47,7 +48,8 @@ export const routes: Routes = [
   {path : 'map-concat',component:ConcatMapComponent},
   {path : 'map-switch',component:SwitchmapComponent},
   {path : 'map-switch-example',component:SwitchMapExampleComponent},
-  {path : 'map-exhaust',component:ExhaustMapComponent}
+  {path : 'map-exhaust',component:ExhaustMapComponent},
+  {path : 'share-reply',component:ShareReplyComponent}
 
 ];
 
