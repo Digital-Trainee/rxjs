@@ -1,1 +1,22 @@
 <p>with-latest-from works!</p>
+<select #colorsId>
+  <option *ngFor="let col of colors" [value]="col">{{col}}</option>
+</select>
+
+<select #namesId>
+  <option *ngFor="let na of names" [value]="na">{{na}}</option>
+</select>
+
+
+
+<div class="row">
+  <div class="col-md-6">
+    <h4>combineLatest</h4>
+    <div class="wrapper" id="combineLatest"></div>
+  </div>
+  <div class="col-md-6">
+    <h4>withLatestFrom</h4>
+    <div class="wrapper" id="withLatestFrom"></div>
+
+  </div>
+</div>
