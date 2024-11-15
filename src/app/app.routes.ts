@@ -25,6 +25,7 @@ import { ExhaustMapComponent } from './exhaust-map/exhaust-map.component';
 import { ShareReplyComponent } from './share-reply/share-reply.component';
 import { WithLatestFromComponent } from './with-latest-from/with-latest-from.component';
 import { ZipAndForkJoinComponent } from './zip-and-fork-join/zip-and-fork-join.component';
+import { CatchErrorComponent } from './catch-error/catch-error.component';
 
 export const routes: Routes = [
   {path:'',component: IntervalComponent },
@@ -53,7 +54,8 @@ export const routes: Routes = [
   {path : 'map-exhaust',component:ExhaustMapComponent},
   {path : 'share-reply',component:ShareReplyComponent},
   {path : 'combine-latest',component:WithLatestFromComponent},
-  {path : 'zip-forkjoin',component:ZipAndForkJoinComponent}
+  {path : 'zip-forkjoin',component:ZipAndForkJoinComponent},
+  {path : 'error-handling',component:CatchErrorComponent}
 
 ];
 
